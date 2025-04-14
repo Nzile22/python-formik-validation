@@ -94,8 +94,8 @@ export const SignupForm = () => {
             <th>email</th>
             <th>age</th>
           </tr>
-          {customers === "undefined" ? (
-            <p>Loading</p>
+          {customers.length === 0 ? (
+            <p>No customers found</p>
           ) : (
             customers.map((customer, i) => (
               <>
